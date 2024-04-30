@@ -63,11 +63,33 @@
 // let c=30;
 // console.log(Array.from({name:"aditya"}));
 
-let myObj={
-    name:"aditya",
-    func:function test(){
-        return "hello";
-    }   
-}
+// let myObj={
+//     name:"aditya",
+//     func:function test(){
+//         return "hello";
+//     }   
+// }
 
-console.log(myObj.func())
+// console.log(myObj.func())
+
+// let obj={
+
+// }
+// obj.getName=function(){
+//     return "hello"
+// }
+
+// let a=obj.getName;
+// console.log(a);
+// console.log(obj.getName());
+
+
+
+let obj1={
+    name:"aditya"
+}
+let obj2={
+    class:12
+}
+let obj3=Object.assign({}, obj1, obj2);
+console.log(obj3);
