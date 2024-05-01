@@ -215,3 +215,19 @@ and react framework */
 // }
 // const{name:n}=obj;
 // console.log(n);
+
+
+
+// const obj={
+//     name:"aditya", class:12, age:20
+// }
+// obj.func=function(){
+//     return [this.name, this.age];
+// }
+// console.log(obj.func());
+
+
+//API stands for Application programming interface, used to make tasks easier, dependencies are in json format.
+
+
+
