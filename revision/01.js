@@ -85,11 +85,69 @@
 
 
 
-let obj1={
-    name:"aditya"
+// let obj1={
+//     name:"aditya"
+// }
+// let obj2={
+//     class:12
+// }
+// let obj3=Object.assign({}, obj1, obj2);
+// console.log(obj3);
+
+
+// let str=new String("aditya")
+// console.log(typeof str);
+
+
+// let str="aditya";
+// console.log(typeof str);
+// console.log(str.length);
+// console.log(typeof str);
+
+
+
+
+//objects
+
+// const person=new Object();
+// person.name="aditya";
+// person.class=12;
+// person.age=20;
+// console.log(person);
+
+// const person={}
+// person.name="aditya";
+// person.class=12;
+// person.age=20;
+// console.log(person);
+
+
+// //mutability of objects 
+
+// const x=person;
+// x.name="arsh";
+// console.log(person);
+
+
+// let x=20;
+// let y=x;
+// x=30;
+// console.log(x);
+
+
+
+//object properties
+//for...in loop
+
+
+const person={
+    name:"aditya",
+    class:12,
+    age:20
 }
-let obj2={
-    class:12
+for(let i in person){
+    console.log(person[i]);   //object[i] is pointing to values
 }
-let obj3=Object.assign({}, obj1, obj2);
-console.log(obj3);
+for(let i in person){
+    console.log(i);   //i is pointing to name 
+}
