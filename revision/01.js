@@ -162,27 +162,56 @@ The delete operator is designed to be used on object properties. It has no effec
 The delete operator should not be used on predefined JavaScript object properties. It can crash your application.*/
 
 
-const obj={
-    name:"aditya",
-    cars:[
-        {brand:"Wolkswagen", 
-         models:["virtus", "poloGT", "tiguan"]},
+// const obj={
+//     name:"aditya",
+//     cars:[
+//         {brand:"Wolkswagen", 
+//          models:["virtus", "poloGT", "tiguan"]},
 
-        {brand:"Toyota", 
-         models:["fortuner", "innova", "camry"]},
+//         {brand:"Toyota", 
+//          models:["fortuner", "innova", "camry"]},
 
-        {brand:"Ford", models:["fiesta",
-         "endeavour", "aspire"]}
-    ]
-}
+//         {brand:"Ford", models:["fiesta",
+//          "endeavour", "aspire"]}
+//     ]
+// }
 
-let x="";
-for(let i in obj.cars){
-    x+=obj.cars[i].brand;
-    for(let j in obj.cars[i].models){
-        x+=obj.cars[i].models[j];
-    }
-}
-console.log(x);
+// let x="";
+// for(let i in obj.cars){
+//     x+=obj.cars[i].brand;
+//     for(let j in obj.cars[i].models){
+//         x+=obj.cars[i].models[j];
+//     }
+// }
+// console.log(x);
 
 
+// function func(...x){
+//     return x;
+// }
+// let x=func(100,200,300,400,500);
+// console.log(x);
+
+
+
+// const obj={
+//     name:"aditya",
+//     class:12
+// }
+// function func(myobj){
+//     return myobj.name;
+// }
+// console.log(func(obj));
+
+
+/*destructuring of objects basically reduces the need to write obj.property format everytime we use it. it 
+basically extracts the properties form the object and increases reusability. very highly used in API calling
+and react framework */
+
+// const obj={
+//     name:"aditya",
+//     class:12,
+//     age:20
+// }
+// const{name:n}=obj;
+// console.log(n);
