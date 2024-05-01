@@ -140,14 +140,49 @@
 //for...in loop
 
 
-const person={
+// const person={
+//     name:"aditya",
+//     class:12,
+//     age:20
+// }
+// for(let i in person){
+//     console.log(person[i]);   //object[i] is pointing to values
+// }
+// for(let i in person){
+//     console.log(i);   //i is pointing to name 
+// }
+
+
+/*The delete keyword deletes both the value of the property and the property itself.
+
+After deletion, the property cannot be used before it is added back again.
+
+The delete operator is designed to be used on object properties. It has no effect on variables or functions.
+
+The delete operator should not be used on predefined JavaScript object properties. It can crash your application.*/
+
+
+const obj={
     name:"aditya",
-    class:12,
-    age:20
+    cars:[
+        {brand:"Wolkswagen", 
+         models:["virtus", "poloGT", "tiguan"]},
+
+        {brand:"Toyota", 
+         models:["fortuner", "innova", "camry"]},
+
+        {brand:"Ford", models:["fiesta",
+         "endeavour", "aspire"]}
+    ]
 }
-for(let i in person){
-    console.log(person[i]);   //object[i] is pointing to values
+
+let x="";
+for(let i in obj.cars){
+    x+=obj.cars[i].brand;
+    for(let j in obj.cars[i].models){
+        x+=obj.cars[i].models[j];
+    }
 }
-for(let i in person){
-    console.log(i);   //i is pointing to name 
-}
+console.log(x);
+
+
