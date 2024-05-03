@@ -250,3 +250,55 @@ and react framework */
 
 // console.log(typeof a);
 // a=10;
+
+
+
+
+
+/*difference between a normal function and an arrow function is that in normal function, this refers 
+to the object that called it, that can be a window or button or whatever. With arrow function, this refers
+to the object that defined it, mainly the global object*/
+
+//code for normal function
+// function func(){
+//     let user="aditya";
+//     console.log(this);
+//     console.log(this.user);
+// }
+// func();
+
+// const func2=()=>{
+//     let user="aditya";
+//     console.log(this);
+//     console.log(this.user);
+// }
+// func2();
+
+
+
+
+//in implicit return we use paranthesis so that we don't need to write the return keyword, used in rect a lot
+
+
+// const func=(num1, num2)=>(num1+num2);
+// console.log(func(1,2))
+
+// const func=()=>({name:"adi"})    
+// console.log(func())
+
+
+
+
+//IIFE(Immediately Invoked Function Expression)
+
+// (function func(){
+//     console.log("hello");
+// })();
+
+// (()=>{
+//     console.log("hello")
+// })()
+
+
+
+
